@@ -331,3 +331,99 @@ footer {
 .menu-toggle.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
+
+
+/* BLOG PAGE ADDITIONS */
+
+/* Hero banner for the blog page (slightly different from main hero) */
+.hero-blog {
+    background: #000; /* or var(--dark-color) */
+    color: var(--primary-color);
+    padding: 3em 2em;
+    background-image: radial-gradient(#00ff00 1px, transparent 1px),
+                      radial-gradient(#00ff00 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+}
+
+.hero-blog h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 10px var(--primary-color);
+}
+
+.hero-blog p {
+    font-size: 1.2rem;
+    margin: 0.5em auto 0;
+    max-width: 600px;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.blog-post {
+    background: #101010;
+    border: 1px solid var(--primary-color);
+    padding: 2em;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    color: var(--light-color);
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 255, 0, 0.2);
+}
+
+.post-date {
+    font-size: 0.85rem;
+    color: #999; 
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 0.6em;
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+.post-excerpt {
+    font-size: 1rem;
+    margin-bottom: 1em;
+    line-height: 1.6;
+    color: var(--light-color);
+}
+
+.post-read-more {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-family: var(--font-code);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.post-read-more:hover {
+    color: var(--primary-color);
+    text-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Optional: Active nav link styling (blog link) */
+.nav-list a.active {
+    border-bottom: 2px solid var(--primary-color);
+}
