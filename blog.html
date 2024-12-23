@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Logic Enchanter - Blog" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logic Enchanter Blog</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Example of Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" 
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for Icons -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      integrity="sha512-jQikAnYgPKfT8hMB54cCeC0skDzM6FatCsXpT74VI84fncKuEZkZFYV20p1LuTDyYva4YuM/ze0kBpFpdXfzIA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <!-- Header & Navbar (same structure as index.html) -->
+    <header>
+        <nav>
+            <div class="logo">Logic Enchanter</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Smaller hero banner for the blog page -->
+        <div class="hero hero-blog">
+            <h1>Latest Blog Posts</h1>
+            <p>Insights, experiments, and tutorials from the Logic Enchanter</p>
+        </div>
+    </header>
+
+    <!-- Blog Listing Section -->
+    <section class="blog-section">
+        <div class="blog-container">
+
+            <!-- Example Blog Post 1 -->
+            <article class="blog-post">
+                <small class="post-date">October 15, 2024</small>
+                <h2 class="post-title">The Magic of Rust: Zero-Cost Abstractions</h2>
+                <p class="post-excerpt">
+                    Dive into how Rust weaves safety and performance together with 
+                    zero-cost abstractions that let developers build robust and 
+                    efficient systems without overhead.
+                </p>
+                <a class="post-read-more" href="#">Read More</a>
+            </article>
+
+            <!-- Example Blog Post 2 -->
+            <article class="blog-post">
+                <small class="post-date">September 05, 2024</small>
+                <h2 class="post-title">Tips for Building Your Own Game Engine in C++</h2>
+                <p class="post-excerpt">
+                    Thinking of making your own game engine? 
+                    Here are some tips on rendering architecture, 
+                    physics, input handling, and more...
+                </p>
+                <a class="post-read-more" href="#">Read More</a>
+            </article>
+
+            <!-- Example Blog Post 3 -->
+            <article class="blog-post">
+                <small class="post-date">August 11, 2024</small>
+                <h2 class="post-title">Async JavaScript: Mastering Promises & Async/Await</h2>
+                <p class="post-excerpt">
+                    JavaScript’s async features might seem tricky, 
+                    but they’re incredibly powerful. Learn how 
+                    to tame asynchronous operations using Promises and Async/Await.
+                </p>
+                <a class="post-read-more" href="#">Read More</a>
+            </article>
+
+            <!-- Add more blog-post articles as needed -->
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <p>&copy; <span id="year"></span> Logic Enchanter. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menu = document.querySelector('.nav-list');
+        const menuBtn = document.querySelector('#mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
