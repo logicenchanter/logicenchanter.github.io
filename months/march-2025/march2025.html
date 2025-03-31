@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Logic Enchanter - Month Review" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Month Review - Logic Enchanter Blog</title>
+    
+    <!-- Link to your existing style.css -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- Google Fonts (same as main site) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap" 
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (if you need icons here as well) -->
+    <link 
+      rel="stylesheet" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      integrity="sha512-jQikAnYgPKfT8hMB54cCeC0skDzM6FatCsXpT74VI84fncKuEZkZFYV20p1LuTDyYva4YuM/ze0kBpFpdXfzIA==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+    />
+</head>
+<body>
+    <!-- Header & Navbar -->
+    <header>
+        <nav>
+            <div class="logo">Logic Enchanter</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Optional smaller hero banner for the post page -->
+        <div class="hero hero-blog">
+            <h1>Month Review</h1>
+            <p>Posted on March 31, 2025</p>
+        </div>
+    </header>
+
+    <!-- Main content of the blog post -->
+    <section class="blog-post-content">
+        <div class="post-container">
+            <h2>Month Review</h2>
+            <p>
+                <!-- Full content of your blog post goes here. -->
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Curabitur faucibus luctus felis, a vulputate nulla. Cras ultricies...
+                <!-- Add headings, code blocks, images, etc. as needed. -->
+            </p>
+
+            <h3>Rust’s Safety and Performance</h3>
+            <p>
+                Dive into how Rust weaves safety and performance together with
+                zero-cost abstractions that let developers build robust and
+                efficient systems without overhead...
+            </p>
+
+            <!-- You can keep writing your post content here. 
+                 Add images, code snippets, subheadings, bullet points, etc. -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Logic Enchanter. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Update year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const menu = document.querySelector('.nav-list');
+        const menuBtn = document.querySelector('#mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('is-active');
+        });
+    </script>
+</body>
+</html>
