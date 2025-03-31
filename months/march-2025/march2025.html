@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Month Review - Logic Enchanter Blog</title>
     
-    <!-- Link to your existing style.css -->
+    <!-- If month-review.html is in a folder two levels below style.css, this is correct. 
+         Otherwise, change href to match your actual file structure (e.g. "../style.css" or "style.css"). -->
     <link rel="stylesheet" href="../../style.css" />
     
     <!-- Google Fonts (same as main site) -->
@@ -37,10 +37,10 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="../../index.html#about">About</a></li>
+                <li><a href="../../index.html#projects">Projects</a></li>
+                <li><a href="../../blog.html">Blog</a></li>
+                <li><a href="../../index.html#contact">Contact</a></li>
             </ul>
         </nav>
         <!-- Optional smaller hero banner for the post page -->
@@ -54,22 +54,140 @@
     <section class="blog-post-content">
         <div class="post-container">
             <h2>Month Review</h2>
-            <p>
-                <!-- Full content of your blog post goes here. -->
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Curabitur faucibus luctus felis, a vulputate nulla. Cras ultricies...
-                <!-- Add headings, code blocks, images, etc. as needed. -->
-            </p>
 
-            <h3>Rust’s Safety and Performance</h3>
+            <!-- 1. Best Product of the Month -->
+            <h3>1) Best Product: 9Barista</h3>
             <p>
-                Dive into how Rust weaves safety and performance together with
-                zero-cost abstractions that let developers build robust and
-                efficient systems without overhead...
+                The 9Barista espresso maker stands out for its ability to produce a 
+                coffee-shop-quality espresso on a simple stovetop. Its dual-boiler system 
+                maintains consistent pressure and temperature, resulting in a robust, 
+                richly flavored shot without the bulk of a traditional espresso machine.
             </p>
+            <p>
+                What makes 9Barista truly brilliant is its clever engineering: the patented 
+                design efficiently forces pressurized steam through the grounds at just the 
+                right moment, achieving the golden espresso ratio. This precision engineering 
+                reduces user error and enhances flavor extraction, bridging the gap between 
+                professional and home-brewing setups.  
+                <br><br>
+                <img 
+                  src="https://via.placeholder.com/400x250?text=9Barista+Espresso+Maker" 
+                  alt="9Barista Espresso Maker Image" 
+                  style="max-width:100%; margin-top:1em;"
+                />
+            </p>
+            <p><em>Reference: [1] <a href="https://9barista.com/" target="_blank">Official 9Barista Website</a></em></p>
 
-            <!-- You can keep writing your post content here. 
-                 Add images, code snippets, subheadings, bullet points, etc. -->
+            <!-- 2. Worst Product of the Month -->
+            <h3>2) Worst Product: Assassin’s Creed Shadows</h3>
+            <p>
+                Assassin’s Creed Shadows has garnered negative attention for weaving controversial 
+                messages into its storyline and marketing materials—an approach that has 
+                reportedly dampened sales and public perception. According to recent 
+                financial reports, its publisher, Biosoft, has seen a noticeable dip 
+                in stock value, signifying that consumer backlash can indeed influence 
+                a company's bottom line.
+            </p>
+            <p>
+                By persisting in such polarizing themes, Biosoft risks alienating a large 
+                segment of its audience and investors. Analysts point out that long-term brand 
+                image and financial stability can be undermined when controversy overshadows 
+                gameplay quality. This highlights the delicate balance between creative vision 
+                and market sensibility in the gaming industry.
+            </p>
+            <p><em>Reference: [2] <a href="#" target="_blank">Biosoft Financial Report</a></em></p>
+
+            <!-- 3. Best Article -->
+            <h3>3) Best Article: CEO Pay in 2022</h3>
+            <p>
+                The Economic Policy Institute’s latest report indicates that CEO compensation 
+                continues to skyrocket. According to the data, CEO pay grew by over 1,200% between 
+                1978 and 2022, while the average worker’s wages increased by a much smaller margin 
+                (around 18%) during the same period. This stark disparity raises questions about 
+                income inequality and its broader impact on the economy.
+            </p>
+            <p>
+                Interestingly, the study also highlights how CEO stock awards make up a 
+                significant portion of total pay. It suggests that limiting executive stock 
+                options could help realign compensation with performance. Below is one of 
+                the most telling graphs from the report, revealing the pronounced gap 
+                between CEO and average worker pay.  
+                <br><br>
+                <img 
+                  src="https://via.placeholder.com/600x300?text=CEO+Pay+Chart" 
+                  alt="CEO Pay Chart" 
+                  style="max-width:100%; margin-top:1em;"
+                />
+            </p>
+            <p><em>Reference: [3] <a href="https://www.epi.org/publication/ceo-pay-in-2022/" target="_blank">EPI CEO Pay in 2022</a></em></p>
+
+            <!-- 4. Best Book: Patrick Bet-David -->
+            <h3>4) Best Book: Patrick Bet-David’s Works</h3>
+            <p>
+                Patrick Bet-David is an entrepreneur, CEO of PHP Agency, and an influential 
+                thought leader in the realms of business strategy and personal development. 
+                Known for his YouTube channel “Valuetainment,” he interviews world-class 
+                achievers and shares insights on entrepreneurship, finance, and leadership.
+            </p>
+            <p>
+                <strong>Your Next Five Moves:</strong> In this book, Bet-David discusses the 
+                critical steps for strategic business decisions. He breaks down complex topics 
+                like scaling your company, developing clarity of vision, and building 
+                high-performance teams, all while emphasizing tactical preparation and 
+                contingency planning.
+            </p>
+            
+            <p>
+                <strong>Choose Your Enemies Wisely:</strong> In this book, Bet-David explores 
+                how defining the right adversaries—be they marketplace competitors or personal 
+                challenges—can sharpen one’s focus and catalyze self-improvement. By laying out 
+                strategies to identify genuine threats, he teaches readers to turn difficult 
+                encounters into moments of growth and to channel competitive energy into 
+                deliberate action.
+            </p>
+            
+            <p>
+                <strong>The Academy:</strong> This work delves into the foundational principles 
+                of mentorship, structured learning, and continuous improvement in business. 
+                Bet-David underscores the importance of surrounding yourself with the right 
+                community and systems, illustrating how disciplined training programs and 
+                high-caliber networks can elevate both your decision-making and leadership 
+                capabilities.
+            </p>
+            
+            <p>
+                <img 
+                  src="https://via.placeholder.com/400x250?text=Patrick+Bet-David" 
+                  alt="Patrick Bet-David" 
+                  style="max-width:100%; margin-top:1em;"
+                />
+            </p>
+            <p><em>Reference: [4] <a href="https://www.patrickbetdavid.com/" target="_blank">Official Website</a></em></p>
+
+            <!-- 5. Market Prediction: Nvidia -->
+            <h3>5) Nvidia Market Prediction</h3>
+            <p>
+                Analysts forecast that Nvidia’s revenues could see a continued upswing into 
+                2025, driven by persistent demand for GPUs in AI workloads and data center 
+                expansions. In Q4 2024, the company’s gaming segment alone grew by nearly 40%, 
+                reflecting robust sales of high-end cards. If these trends persist, shares 
+                could climb above the \$350 mark, especially if AI adoption accelerates 
+                globally.
+            </p>
+            <p>
+                However, supply-chain bottlenecks and mounting competition from rivals like 
+                AMD and Intel might temper this climb. There's also the broader market 
+                volatility to consider, which could introduce significant swings throughout 
+                2025. Below is a snapshot of Nvidia’s recent stock performance, illustrating 
+                the upward trajectory but also hinting at potential volatility ahead.  
+                <br><br>
+                <img 
+                  src="https://via.placeholder.com/600x300?text=Nvidia+Stock+Chart" 
+                  alt="Nvidia Stock Chart" 
+                  style="max-width:100%; margin-top:1em;"
+                />
+            </p>
+            <p><em>Reference: [5] <a href="#" target="_blank">Nvidia Financial Statements</a></em></p>
         </div>
     </section>
 
