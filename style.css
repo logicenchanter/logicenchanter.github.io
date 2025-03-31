@@ -427,3 +427,26 @@ footer {
 .nav-list a.active {
     border-bottom: 2px solid var(--primary-color);
 }
+
+/* Single Post Content Section */
+.blog-post-content {
+    padding: 4em 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.post-container {
+    background: #101010;
+    border: 1px solid var(--primary-color);
+    padding: 2em;
+    border-radius: 10px;
+    color: var(--light-color);
+}
+
+.post-container h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1em;
+    text-shadow: 0 0 5px var(--primary-color);
+}
